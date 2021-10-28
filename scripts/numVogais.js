@@ -6,4 +6,6 @@ function numVogais(palavra) {
     // retorna o valor de vogais na palavra
     return num_vogais;
 }
+// Demonstração de funcionamento da função
+console.log(numVogais("ParâMETRO"));
 //# sourceMappingURL=numVogais.js.map
