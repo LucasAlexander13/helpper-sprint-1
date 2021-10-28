@@ -6,3 +6,9 @@ Primeira Sprint do bootcamp origins da Helpper, com o objetivo de trabalhar o de
 - Typescript
 - Git flow
 - HTML
+
+## Exercícios
+
+1. [numVogais](numVogais/README.md)
+
+Todos os scripts são compilados em Javascript e armazenados na [pasta scripts](scripts).
