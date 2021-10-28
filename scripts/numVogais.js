@@ -8,4 +8,7 @@ function numVogais(palavra) {
 }
 // Demonstração de funcionamento da função
 console.log(numVogais("ParâMETRO"));
+// Demonstração da função em um formulário
+var entrada = window.prompt('Digite uma palavra: ');
+alert(`O número de vogais na palavra é: ${numVogais(entrada)}`);
 //# sourceMappingURL=numVogais.js.map

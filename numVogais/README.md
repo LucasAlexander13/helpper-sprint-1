@@ -10,3 +10,15 @@
 ## Linguagem utilizada
 
 - Typescript
+
+## Demonstrações
+
+Demonstração do funcionamento da função por meio de formulário em HTML.
+
+![Entrada](src/entrada.png)
+
+Saída do valor de entrada
+
+![Saída](src/saida.png)
+
+O formulário está presente no arquivo "[formulario-1.html](../formulario-1.html)", e o código fonte em TypeScript pode ser encontrado [aqui](../numVogais.ts).
