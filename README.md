@@ -10,7 +10,7 @@ Primeira Sprint do bootcamp origins da Helpper, com o objetivo de trabalhar o de
 ## Exercícios
 
 1. [numVogais](numVogais/README.md)
-2. [Exercício 2]
+2. [UtilidadesLista](utilidadesLista/README.md)
 3. [listarValores](listarValores/README.md)
 4. [exercício 4]
 
