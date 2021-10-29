@@ -1,0 +1,35 @@
+function listarValores(lista) {
+    // criação da lista vazia para armazenar os valores
+    let nova_lista = [];
+    // percorrer a lista e filtrar os numeros para adicionar à nova_lista
+    for (let i = 0; i < lista.length; i++) {
+        let item = Number(lista[i]);
+        // checar se o item da lista é numérico
+        if (isNaN(item)) {
+            continue;
+        }
+        else {
+            nova_lista.push(item);
+        }
+    }
+    // declaração das variáveis para percorrer na lista de valores
+    let somatoria = 0;
+    let maior_numero = nova_lista[0];
+    let menor_numero = nova_lista[0];
+    // para cada número na lista, encontrar o maior e menor valor, e somar todos os valores
+    for (let i = 0; i < nova_lista.length; i++) {
+        if (nova_lista[i] > maior_numero) {
+            maior_numero = nova_lista[i];
+        }
+        else if (nova_lista[i] < menor_numero) {
+            menor_numero = nova_lista[i];
+        }
+        somatoria += nova_lista[i];
+    }
+    // calcular o valor médio a partir da quantidade de elementos na lista
+    let valor_medio = somatoria / nova_lista.length;
+    // atribuir o maior, menor e o valor médio na nova_lista
+    nova_lista = [maior_numero, menor_numero, valor_medio];
+    return nova_lista;
+}
+//# sourceMappingURL=listarValores.js.map
