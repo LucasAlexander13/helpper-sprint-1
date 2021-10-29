@@ -9,6 +9,4 @@ Primeira Sprint do bootcamp origins da Helpper, com o objetivo de trabalhar o de
 
 ## Exercícios
 
-1. [numVogais](numVogais/README.md)
-
-Todos os scripts são compilados em Javascript e armazenados na [pasta scripts](scripts).
+1. [numVogais](Exercicio-01/README.md)
