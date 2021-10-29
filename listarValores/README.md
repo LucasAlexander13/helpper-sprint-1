@@ -9,6 +9,10 @@
 
 Demonstre essa função com o paradigma funcional e imperativo.
 
-## Linguagem utilizada
+## Linguagem Utilizada
 
 - Typescript
+
+## Código Fonte
+
+O código fonte em TypeScript pode ser encontrado [aqui](../listarValores.ts).
