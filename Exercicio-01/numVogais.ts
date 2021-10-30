@@ -7,8 +7,20 @@ function numVogais (palavra: string) : number {
   return num_vogais;
 }
 
-// Demonstração de funcionamento da função
-console.log(numVogais("ParâMETRO"));
-// Demonstração da função em um formulário
-var entrada: string = window.prompt('Digite uma palavra: ');
-alert(`O número de vogais na palavra é: ${numVogais(entrada)}`);
+// mostra o funcionamento da função no console
+console.log(numVogais(`Lucas possui ${numVogais("Lucas")} vogais`))
+console.log(numVogais(`Alexander possui ${numVogais("Alexander")} vogais`))
+
+// declara a variável que será usada no laço de repetição
+let continuar: boolean = true;
+
+while (continuar !== null) {
+  // recebe uma palavra por meio de um prompt
+  let palavra: string = window.prompt('Digite uma palavra: ');
+  console.log(palavra);
+  // mostra o número de vogais por meio de um alert
+  window.alert(`O número de vogais da palavra é: ${numVogais(palavra)}`);
+  console.log(numVogais(palavra));
+  // altera a variável usada como mudança de estado do laço de repetição 
+  continuar = window.confirm("Deseja inserir outra palavra?");
+}
