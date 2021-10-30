@@ -14,4 +14,4 @@
 
 ## Código Fonte
 
-O código fonte em TypeScript pode ser encontrado [aqui](utilidadesLista.ts).
+O código fonte em TypeScript em imperativo pode ser encontrado [aqui](imperativo.ts) e o código das funções em paradigma funcional pode ser encontrado [aqui](funcional.ts).
