@@ -7,11 +7,11 @@ function numVogais(palavra) {
     return num_vogais;
 }
 // mostra o funcionamento da função no console
-console.log(numVogais(`Lucas possui ${numVogais("Lucas")} vogais`));
-console.log(numVogais(`Alexander possui ${numVogais("Alexander")} vogais`));
+console.log(`Lucas possui ${numVogais("Lucas")} vogais`);
+console.log(`Alexander possui ${numVogais("Alexander")} vogais`);
 // declara a variável que será usada no laço de repetição
 let continuar = true;
-while (continuar !== null) {
+while (continuar === true) {
     // recebe uma palavra por meio de um prompt
     let palavra = window.prompt('Digite uma palavra: ');
     console.log(palavra);
