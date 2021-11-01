@@ -24,6 +24,14 @@ function apagarItem(id) {
 }
 // altera informações a partir do id e do tipo de informação
 function alterarInfo(id, tipo, info) {
-    return lista.find((pessoa) => pessoa.id === id)[tipo] = info;
+    // encontra a posição na lista em que o id é o mesmo ao inserido, e -1 se inexistente
+    const indice = lista.findIndex(lista => lista.id === id);
+    const idInexistente = -1;
+    // se o id existir, atualiza a informação para a nova
+    if (indice !== idInexistente) {
+        lista[indice][tipo] = info;
+    }
+    // retorna a lista, independente de alterações
+    return lista;
 }
 //# sourceMappingURL=funcional.js.map
