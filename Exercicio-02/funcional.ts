@@ -28,6 +28,12 @@ function apagarItem(id: number): Array<Pessoa> {
     return lista.filter((pessoa: Pessoa) => pessoa.id !== id);
 }
 // altera informações a partir do id e do tipo de informação
-function alterarInfo(id:number, tipo: string, info: string): string {
-    return lista.find((pessoa: Pessoa) => pessoa.id === id)[tipo] = info;
+function alterarInfo(id: number, tipo: string, info: string): Array<Pessoa> {
+    // encontra a posição na lista em que o id é o mesmo ao inserido, e -1 se inexistente
+    const indice: number = lista.findIndex(lista => lista.id === id);
+    const idInexistente: number = -1;
+    // se o id existir, atualiza a informação para a nova
+    if (indice !== idInexistente) { lista[indice][tipo] = info }
+    // retorna a lista, independente de alterações
+    return lista;
 }
