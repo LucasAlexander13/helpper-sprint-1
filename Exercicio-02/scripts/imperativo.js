@@ -11,9 +11,9 @@ let lista = [
 // retorna a Bio da lista a partir do id passado como parâmetro
 function retornarBio(lista, id) {
     let bio;
-    for (let i = 0; i < lista.length; i++) {
-        if (lista[i]['id'] === id) {
-            bio = lista[i]['bio'];
+    for (let indice = 0; indice < lista.length; indice++) {
+        if (lista[indice]['id'] === id) {
+            bio = lista[indice]['bio'];
         }
     }
     return bio;
@@ -21,9 +21,9 @@ function retornarBio(lista, id) {
 // retorna o Name da lista a partir do id passado como parâmetro
 function retornarNome(lista, id) {
     let nome;
-    for (let i = 0; i < lista.length; i++) {
-        if (lista[i]['id'] === id) {
-            nome = lista[i]['name'];
+    for (let indice = 0; indice < lista.length; indice++) {
+        if (lista[indice]['id'] === id) {
+            nome = lista[indice]['name'];
         }
     }
     return nome;
@@ -31,9 +31,9 @@ function retornarNome(lista, id) {
 //retorna uma nova lista, removendo os itens do id passado
 function apagarItem(lista, id) {
     let nova_lista = lista;
-    for (let i = 0; i < nova_lista.length; i++) {
-        if (nova_lista[i]['id'] === id) {
-            nova_lista.splice(i, 1);
+    for (let indice = 0; indice < nova_lista.length; indice++) {
+        if (nova_lista[indice]['id'] === id) {
+            nova_lista.splice(indice, 1);
         }
     }
     return nova_lista;
@@ -41,13 +41,13 @@ function apagarItem(lista, id) {
 // retorna uma nova lista com as informações alteradas a partir do id e do tipo de informação
 function alterarInfo(lista, id, tipo, nova_info) {
     let nova_lista = lista;
-    for (let i = 0; i < nova_lista.length; i++) {
-        if (nova_lista[i]['id'] === id) {
+    for (let indice = 0; indice < nova_lista.length; indice++) {
+        if (nova_lista[indice]['id'] === id) {
             if (tipo === 'name') {
-                nova_lista[i]['name'] = nova_info;
+                nova_lista[indice]['name'] = nova_info;
             }
             else if (tipo === 'bio') {
-                nova_lista[i]['bio'] = nova_info;
+                nova_lista[indice]['bio'] = nova_info;
             }
         }
     }
