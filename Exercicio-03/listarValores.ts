@@ -1,6 +1,6 @@
 function listarValores (lista: any[]) : number[] {
     // criação da lista vazia para armazenar os valores
-    let nova_lista: number[] = []
+    let nova_lista: number[] = [];
     // percorrer a lista e filtrar os numeros para adicionar à nova_lista
     for (let i: number = 0; i < lista.length; i++){
         let item = Number(lista[i]);
@@ -22,7 +22,7 @@ function listarValores (lista: any[]) : number[] {
             maior_numero = nova_lista[i];
         }
         else if (nova_lista[i] < menor_numero) {
-            menor_numero = nova_lista[i]
+            menor_numero = nova_lista[i];
         }
         somatoria += nova_lista[i];
     }
