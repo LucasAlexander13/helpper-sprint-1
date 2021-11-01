@@ -10,28 +10,20 @@ let lista = [
 ----------------------------------------------------------------------------------*/
 // encontra a Bio da lista a partir do id passado como parâmetro
 function retornarBio(id) {
-    return lista.find((pessoa) => pessoa.id === id).bio;
+    var _a;
+    return (_a = lista.find((pessoa) => pessoa.id === id)) === null || _a === void 0 ? void 0 : _a.bio;
 }
 // encontra o Name da lista a partir do id passado como parâmetro
 function retornarNome(id) {
-    return lista.find((pessoa) => pessoa.id === id).name;
+    var _a;
+    return (_a = lista.find((pessoa) => pessoa.id === id)) === null || _a === void 0 ? void 0 : _a.name;
 }
-//filtra a lista removendo os itens do id passado
+// filtra a lista removendo os itens do id passado
 function apagarItem(id) {
     return lista.filter((pessoa) => pessoa.id !== id);
 }
 // altera informações a partir do id e do tipo de informação
 function alterarInfo(id, tipo, info) {
-    if (tipo === 'name') {
-        lista.find((pessoa) => pessoa.id === id).name = info;
-        return true;
-    }
-    else if (tipo === 'bio') {
-        lista.find((pessoa) => pessoa.id === id).bio = info;
-        return true;
-    }
-    else {
-        return false;
-    }
+    return lista.find((pessoa) => pessoa.id === id)[tipo] = info;
 }
 //# sourceMappingURL=funcional.js.map
