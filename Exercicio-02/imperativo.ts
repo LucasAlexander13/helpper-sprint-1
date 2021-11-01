@@ -20,9 +20,9 @@ let lista: Array<Pessoa> = [
 function retornarBio(lista: Array<Pessoa>, id: number): string {
     let bio: string;
 
-    for(let i: number = 0; i < lista.length; i++) {
-        if (lista[i]['id'] === id) {
-            bio = lista[i]['bio'];
+    for(let indice: number = 0; indice < lista.length; indice++) {
+        if (lista[indice]['id'] === id) {
+            bio = lista[indice]['bio'];
         }
     }
     return bio;
@@ -31,9 +31,9 @@ function retornarBio(lista: Array<Pessoa>, id: number): string {
 function retornarNome(lista: Array<Pessoa>, id: number): string {
     let nome: string;
 
-    for(let i: number = 0; i < lista.length; i++) {
-        if (lista[i]['id'] === id) {
-            nome = lista[i]['name'];
+    for(let indice: number = 0; indice < lista.length; indice++) {
+        if (lista[indice]['id'] === id) {
+            nome = lista[indice]['name'];
         }
     }
     return nome;
@@ -42,9 +42,9 @@ function retornarNome(lista: Array<Pessoa>, id: number): string {
 function apagarItem(lista: Array<Pessoa>, id: number): Array<Pessoa> {
     let nova_lista: Array<Pessoa> = lista;
 
-    for(let i: number = 0; i < nova_lista.length; i++) {
-        if (nova_lista[i]['id'] === id) {
-            nova_lista.splice(i, 1);
+    for(let indice: number = 0; indice < nova_lista.length; indice++) {
+        if (nova_lista[indice]['id'] === id) {
+            nova_lista.splice(indice, 1);
         }
     }
     return nova_lista;
@@ -53,10 +53,10 @@ function apagarItem(lista: Array<Pessoa>, id: number): Array<Pessoa> {
 function alterarInfo(lista: Array<Pessoa>, id: number, tipo: string, nova_info: string): Array<Pessoa> {
     let nova_lista: Array<Pessoa> = lista;
 
-    for(let i: number = 0; i < nova_lista.length; i++) {
-        if (nova_lista[i]['id'] === id) {
-            if (tipo === 'name') { nova_lista[i]['name'] = nova_info } 
-            else if (tipo === 'bio') { nova_lista[i]['bio'] = nova_info }
+    for(let indice: number = 0; indice < nova_lista.length; indice++) {
+        if (nova_lista[indice]['id'] === id) {
+            if (tipo === 'name') { nova_lista[indice]['name'] = nova_info } 
+            else if (tipo === 'bio') { nova_lista[indice]['bio'] = nova_info }
         }
     }
     return nova_lista;
