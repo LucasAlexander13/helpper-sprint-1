@@ -17,11 +17,11 @@ let lista: Array<Pessoa> = [
 
 // encontra a Bio da lista a partir do id passado como parâmetro
 function retornarBio(id: number): string {
-    return lista.find((pessoa: Pessoa) => pessoa.id === id).bio;
+    return lista.find((pessoa: Pessoa) => pessoa.id === id)?.bio as string;
 }
 // encontra o Name da lista a partir do id passado como parâmetro
 function retornarNome(id: number): string {
-    return lista.find((pessoa: Pessoa) => pessoa.id === id).name;
+    return lista.find((pessoa: Pessoa) => pessoa.id === id)?.name as string;
 }
 //filtra a lista removendo os itens do id passado
 function apagarItem(id: number): Array<Pessoa> {
