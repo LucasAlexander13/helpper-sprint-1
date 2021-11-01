@@ -23,21 +23,11 @@ function retornarBio(id: number): string {
 function retornarNome(id: number): string {
     return lista.find((pessoa: Pessoa) => pessoa.id === id)?.name as string;
 }
-//filtra a lista removendo os itens do id passado
+// filtra a lista removendo os itens do id passado
 function apagarItem(id: number): Array<Pessoa> {
     return lista.filter((pessoa: Pessoa) => pessoa.id !== id);
 }
 // altera informações a partir do id e do tipo de informação
-function alterarInfo(id:number, tipo: string, info: string): boolean {
-    if (tipo === 'name') {
-        lista.find((pessoa: Pessoa) => pessoa.id === id).name = info;
-        return true;
-    }
-    else if (tipo === 'bio') {
-        lista.find((pessoa: Pessoa) => pessoa.id === id).bio = info;
-        return true;
-    }
-    else { 
-        return false 
-    }
+function alterarInfo(id:number, tipo: string, info: string): string {
+    return lista.find((pessoa: Pessoa) => pessoa.id === id)[tipo] = info;
 }
