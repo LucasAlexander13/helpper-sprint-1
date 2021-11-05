@@ -5,9 +5,7 @@ function listarValores (lista: any[]) : number[] {
     for (let indice: number = 0; indice < lista.length; indice++){
         let item = Number(lista[indice]);
         // checar se o item da lista é numérico
-        if (isNaN(item)){
-            continue;
-        } else {
+        if (!isNaN(item)){
             nova_lista.push(item);
         }
     }
