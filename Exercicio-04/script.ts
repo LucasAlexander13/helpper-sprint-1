@@ -38,13 +38,13 @@ function estruturarTabela(lista: Array<Pessoa>): string {
 function adicionarDados(lista: Array<Pessoa>): string {
     let conteudo: string = "";
     // para cada objeto na lista passada...
-    for (let cientista in lista){
+    for (let cientista of lista){
         // cria uma nova table row ao conteúdo
         conteudo += "<tr class=\"content\">";
         // para cada propriedade no objeto da lista...
-        for (let tipoInfo in lista[cientista]){
+        for (let tipoInfo in cientista){
             // adiciona a informação do objeto da lista na table data
-            conteudo += `<td>${lista[cientista][tipoInfo]}</td>`;
+            conteudo += `<td>${cientista[tipoInfo]}</td>`;
         }
         // fecha a table row criada
         conteudo += "</tr>";
