@@ -13,6 +13,4 @@
 
 - Typescript
 - HTML
-
-## Demonstrações
-
+- CSS
